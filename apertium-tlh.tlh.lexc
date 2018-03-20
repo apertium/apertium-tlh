@@ -57,12 +57,12 @@ Multichar_Symbols
  %<pl2%>
  %<pl3%>
 
-  %<sg1obj%>
-  %<sg2obj%>
-  %<sg3obj%>
-  %<pl1obj%>
-  %<pl2obj%>
-  %<pl3obj%>
+  %<o_sg1%>
+  %<o_sg2%>
+  %<o_sg3%>
+  %<o_pl1%>
+  %<o_pl2%>
+  %<o_pl3%>
 
  %<neg%>
  %<ref%>
@@ -480,44 +480,44 @@ LEXICON VerbalPrefixes
 %<pl1%>:ma     Verbs ;
 %<pl2%>:Su     Verbs ;
 %<pl3%>:0     Verbs ;
-%<sg2%>%<sg1obj%>:cho     Verbs ;
-%<sg3%>%<sg1obj%>:mu     Verbs ;
-%<pl2%>%<sg1obj%>:tu     Verbs ;
-%<pl3%>%<sg1obj%>:mu     Verbs ;
-%<sg1%>%<sg2obj%>:qa     Verbs ;
-%<sg3%>%<sg2obj%>:Du     Verbs ;
-%<pl1%>%<sg2obj%>:pI     Verbs ;
-%<pl3%>%<sg2obj%>:nI     Verbs ;
-%<sg1%>%<sg3obj%>:vI     Verbs ;
-%<sg2%>%<sg3obj%>:Da     Verbs ;
-%<sg3%>%<sg3obj%>:0     Verbs ;
-%<pl1%>%<sg3obj%>:wI     Verbs ;
-%<pl2%>%<sg3obj%>:bo     Verbs ;
-%<pl3%>%<sg3obj%>:lu     Verbs ;
-%<sg2%>%<pl1obj%>:ju     Verbs ;
-%<sg3%>%<pl1obj%>:nu     Verbs ;
-%<pl2%>%<pl1obj%>:che     Verbs ;
-%<pl3%>%<pl1obj%>:nu     Verbs ;
-%<sg1%>%<pl2obj%>:Sa     Verbs ;
-%<sg3%>%<pl2obj%>:lI     Verbs ;
-%<pl1%>%<pl2obj%>:re     Verbs ;
-%<pl1%>%<pl2obj%>:lI     Verbs ;
-%<sg1%>%<pl3obj%>:vI     Verbs ;
-%<sg2%>%<pl3obj%>:Da     Verbs ;
-%<sg3%>%<pl3obj%>:0     Verbs ;
-%<pl1%>%<pl3obj%>:DI     Verbs ;
-%<pl2%>%<pl3obj%>:bo     Verbs ;
-%<pl3%>%<pl3obj%>:0     Verbs ;
+%<sg2%>%<o_sg1%>:cho     Verbs ;
+%<sg3%>%<o_sg1%>:mu     Verbs ;
+%<pl2%>%<o_sg1%>:tu     Verbs ;
+%<pl3%>%<o_sg1%>:mu     Verbs ;
+%<sg1%>%<o_sg2%>:qa     Verbs ;
+%<sg3%>%<o_sg2%>:Du     Verbs ;
+%<pl1%>%<o_sg2%>:pI     Verbs ;
+%<pl3%>%<o_sg2%>:nI     Verbs ;
+%<sg1%>%<o_sg3%>:vI     Verbs ;
+%<sg2%>%<o_sg3%>:Da     Verbs ;
+%<sg3%>%<o_sg3%>:0     Verbs ;
+%<pl1%>%<o_sg3%>:wI     Verbs ;
+%<pl2%>%<o_sg3%>:bo     Verbs ;
+%<pl3%>%<o_sg3%>:lu     Verbs ;
+%<sg2%>%<o_pl1%>:ju     Verbs ;
+%<sg3%>%<o_pl1%>:nu     Verbs ;
+%<pl2%>%<o_pl1%>:che     Verbs ;
+%<pl3%>%<o_pl1%>:nu     Verbs ;
+%<sg1%>%<o_pl2%>:Sa     Verbs ;
+%<sg3%>%<o_pl2%>:lI     Verbs ;
+%<pl1%>%<o_pl2%>:re     Verbs ;
+%<pl1%>%<o_pl2%>:lI     Verbs ;
+%<sg1%>%<o_pl3%>:vI     Verbs ;
+%<sg2%>%<o_pl3%>:Da     Verbs ;
+%<sg3%>%<o_pl3%>:0     Verbs ;
+%<pl1%>%<o_pl3%>:DI     Verbs ;
+%<pl2%>%<o_pl3%>:bo     Verbs ;
+%<pl3%>%<o_pl3%>:0     Verbs ;
 %<imp%>%<sg2%>:yI     Verbs ;
 %<imp%>%<pl2%>:pe     Verbs ;
-%<imp%>%<sg2%>%<sg1obj%>:HI     Verbs ;
-%<imp%>%<pl2%>%<sg1obj%>:HI     Verbs ;
-%<imp%>%<sg2%>%<sg3obj%>:yI     Verbs ;
-%<imp%>%<pl2%>%<sg3obj%>:yI     Verbs ;
-%<imp%>%<pl2%>%<pl1obj%>:gho     Verbs ;
-%<imp%>%<pl2%>%<pl1obj%>:gho     Verbs ;
-%<imp%>%<pl2%>%<pl3obj%>:tI     Verbs ;
-%<imp%>%<pl2%>%<pl3obj%>:tI     Verbs ;
+%<imp%>%<sg2%>%<o_sg1%>:HI     Verbs ;
+%<imp%>%<pl2%>%<o_sg1%>:HI     Verbs ;
+%<imp%>%<sg2%>%<o_sg3%>:yI     Verbs ;
+%<imp%>%<pl2%>%<o_sg3%>:yI     Verbs ;
+%<imp%>%<pl2%>%<o_pl1%>:gho     Verbs ;
+%<imp%>%<pl2%>%<o_pl1%>:gho     Verbs ;
+%<imp%>%<pl2%>%<o_pl3%>:tI     Verbs ;
+%<imp%>%<pl2%>%<o_pl3%>:tI     Verbs ;
 
 LEXICON Reflexive
 
