@@ -71,6 +71,7 @@ modes/tlh-morph.mode: modes.xml
 		cp -v $< . ;\
 	fi
 	apertium-gen-modes modes.xml
+	mv -v *.mode modes/
 
 
 ## Cleanup
