@@ -1,0 +1,78 @@
+Alphabet
+
+a e i o u y ä ö
+b c d f g h j k l m n p q r s t v w x z
+A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
+
+’:%' %':’ ’ %'
+%-
+
+!0	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F
+!U+F8Dx																
+!U+F8Ex																
+!U+F8Fx																
+! boundaries
+a:
+b:
+c: ! ch
+h:0
+d:
+e:
+g: ! gh
+H:
+I:
+j:
+l:
+m:
+n:
+n: ! ng
+g:0 
+o:
+p:
+q:
+Q:
+r:
+s:
+t:
+t: ! tlh
+l:0 
+u:
+v:
+w:
+y:
+’:
+%0:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+8:
+9:
+,:
+.:
+h:0
+
+;
+
+Sets
+Vowels = a e i o u y ä ö ;
+Consonants = b c d f g h j k l m n p q r s t v w x z ;
+UpperOrSyms = A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö  %0 1 2 3 4 5 6 7 8 9 %- ;
+
+Rules
+
+
+"h removal in transcribe"
+h:0 <=>  g: _ ;
+         t: l:0   _  ;
+         c: _ ;
+
+"l removal in transcribe"
+l:0 <=> _ h:0 ;
+
+"g removal in transcribe"
+g:0 <=> n: _ ;
+

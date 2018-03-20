@@ -1,0 +1,615 @@
+! this is a conversion of gtsvn version I made earlier
+! I cleaned up most doccomments cause apertium aims at minimalism
+
+! Divvun & Giellatekno - open source grammars for Klingon language
+! Copyright © 2015 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@uit.no or feedback@divvun.no
+
+
+Multichar_Symbols
+
+ %<n%> 
+ %<vblex%> 
+ %<prn%>
+ %<num%>  
+ %<cnjcoo%>
+ %<cnjadv%>
+ %<adv%>  
+ %<ij%> 
+
+ %<sg%> 
+ %<pl%>
+ %<loc%>
+ %<sep%>
+ %<ins%>
+ %<nom%>
+ %<benef%>
+ %<aug%> 
+ %<dim%>
+
+ %<px1sg%>
+ %<px2sg%>
+ %<px3sg%>
+ %<px1pl%>
+ %<px2pl%>
+ %<px3pl%> 
+
+ %<ind%>
+ %<imp%>
+ %<cont%>
+ %<past%>
+ %<prog%>
+
+ %<sg1%>
+ %<sg2%>
+ %<sg3%>
+ %<pl1%>
+ %<pl2%>
+ %<pl3%>
+
+  %<sg1obj%>
+  %<sg2obj%>
+  %<sg3obj%>
+  %<pl1obj%>
+  %<pl2obj%>
+  %<pl3obj%>
+
+ %<neg%>
+ %<ref%>
+ %<rec%> 
+ %<abbr%> 
+ %<punct%>
+ %<sent%> 
+
+ %<qst%>
+ %<foc%>
+
+
+
+
+LEXICON Root
+
+0   Nouns   ;
+0   Adverbs ;
+0   Conjunctions    ;
+0   Interjections   ;
+0   Pronouns    ;
+0   Numerals    ;
+0   VerbalPrefixes    ;
+
+
+!! There are no adjectives in Klingon language, see verbs instead.
+
+
+LEXICON Adverbs
+batlh%<adv%>:batlh    #  ;
+bong%<adv%>:bong    #  ;
+chaq%<adv%>:chaq    #  ;
+chIch%<adv%>:chIch    #  ;
+DaH%<adv%>:DaH    #  ;
+Do’%<adv%>:Do’    #  ;
+loQ%<adv%>:loQ    #  ;
+nom%<adv%>:nom    #  ;
+not%<adv%>:not    #  ;
+pay’%<adv%>:pay’    #  ;
+pIj%<adv%>:pIj    #  ;
+QIt%<adv%>:QIt    #  ;
+reH%<adv%>:reH    #  ;
+rut%<adv%>:rut    #  ;
+tugh%<adv%>:tugh    #  ;
+vaj%<adv%>:vaj    #  ;
+wej%<adv%>:wej    #  ;
+neH%<adv%>:neH    #  ;
+
+
+
+LEXICON Conjunctions
+
+je%<cnjcoo%>:je      #   ;
+joq%<cnjadv%>:joq    #   ;
+ghap%<cnjadv%>:ghap  #   ;
+’ej%<cnjcoo%>:’ej    #   ;
+qoj%<cnjadv%>:qoj    #   ;
+pagh%<cnjadv%>:pagh  #   ;
+’ach%<cnjadv%>:’ach  #   ;
+
+
+LEXICON Interjections
+
+ghobe’%<ij%>:ghobe’    #  ;
+Ha’%<ij%>:Ha’    #  ;
+HIja’%<ij%>:HIja’    #  ;
+HISlaH%<ij%>:HISlaH    #  ;
+lu’%<ij%>:lu’    #  ;
+luq%<ij%>:luq    #  ;
+maj%<ij%>:maj    #  ;
+majQa’%<ij%>:majQa’    #  ;
+nuqneH%<ij%>:nuqneH    #  ;
+pItlh%<ij%>:pItlh    #  ;
+Qo’%<ij%>:Qo’    #  ;
+SuH%<ij%>:SuH    #  ;
+Su’%<ij%>:Su’    #  ;
+toH%<ij%>:toH    #  ;
+wejpuH%<ij%>:wejpuH    #  ;
+’eH%<ij%>:’eH    #  ;
+Qi’yaH%<ij%>:Qi’yaH    #  ;
+ghuy’cha’%<ij%>:ghuy’cha’    #  ;
+Qu’vatlh%<ij%>:Qu’vatlh    #  ;
+
+
+LEXICON Nouns
+
+Sus     Augmentation?    ;
+Qagh    Augmentation?    ;
+woQ     Augmentation?    ;
+roj     Augmentation?    ;
+
+LEXICON Numerals
+
+! 0
+pagh%<num%>:pagh   # ;
+! 1-9
+wa’%<num%>:wa’    #   ;
+cha’%<num%>:cha’    #   ;
+wej%<num%>:wej    #   ;
+IoS%<num%>:IoS    #   ;
+vagh%<num%>:vagh    #   ;
+jav%<num%>:jav   #   ;
+Soch%<num%>:Soch    #   ;
+chorgh%<num%>:chorgh    #   ;
+Hut%<num%>:Hut    #   ;
+! 10-90 etc. easy compounds
+wa’maH%<num%>:wa’maH    #   ;
+cha’maH%<num%>:cha’maH    #   ;
+wejmaH%<num%>:wejmaH    #   ;
+IoSmaH%<num%>:IoSmaH    #   ;
+vaghmaH%<num%>:vaghmaH    #   ;
+javmaH%<num%>:javmaH   #   ;
+SochmaH%<num%>:SochmaH    #   ;
+chorghmaH%<num%>:chorghmaH    #   ;
+HutmaH%<num%>:HutmaH    #   ;
+wa’vatlh%<num%>:wa’vatlh    #   ;
+cha’vatlh%<num%>:cha’vatlh    #   ;
+wejvatlh%<num%>:wejvatlh    #   ;
+IoSvatlh%<num%>:IoSvatlh    #   ;
+vaghvatlh%<num%>:vaghvatlh    #   ;
+javvatlh%<num%>:javvatlh   #   ;
+Sochvatlh%<num%>:Sochvatlh    #   ;
+chorghvatlh%<num%>:chorghvatlh    #   ;
+Hutvatlh%<num%>:Hutvatlh    #   ;
+wa’SaD%<num%>:wa’SaD    #   ;
+cha’SaD%<num%>:cha’SaD    #   ;
+wejSaD%<num%>:wejSaD    #   ;
+IoSSaD%<num%>:IoSSaD    #   ;
+vaghSaD%<num%>:vaghSaD    #   ;
+javSaD%<num%>:javSaD   #   ;
+SochSaD%<num%>:SochSaD    #   ;
+chorghSaD%<num%>:chorghSaD    #   ;
+HutSaD%<num%>:HutSaD    #   ;
+wa’SanID%<num%>:wa’SanID    #   ;
+cha’SanID%<num%>:cha’SanID    #   ;
+wejSanID%<num%>:wejSanID    #   ;
+IoSSanID%<num%>:IoSSanID    #   ;
+vaghSanID%<num%>:vaghSanID    #   ;
+javSanID%<num%>:javSanID   #   ;
+SochSanID%<num%>:SochSanID    #   ;
+chorghSanID%<num%>:chorghSanID    #   ;
+HutSanID%<num%>:HutSanID    #   ;
+wa’netlh%<num%>:wa’netlh    #   ;
+cha’netlh%<num%>:cha’netlh    #   ;
+wejnetlh%<num%>:wejnetlh    #   ;
+IoSnetlh%<num%>:IoSnetlh    #   ;
+vaghnetlh%<num%>:vaghnetlh    #   ;
+javnetlh%<num%>:javnetlh   #   ;
+Sochnetlh%<num%>:Sochnetlh    #   ;
+chorghnetlh%<num%>:chorghnetlh    #   ;
+Hutnetlh%<num%>:Hutnetlh    #   ;
+wa’bIp%<num%>:wa’bIp    #   ;
+cha’bIp%<num%>:cha’bIp    #   ;
+wejbIp%<num%>:wejbIp    #   ;
+IoSbIp%<num%>:IoSbIp    #   ;
+vaghbIp%<num%>:vaghbIp    #   ;
+javbIp%<num%>:javbIp   #   ;
+SochbIp%<num%>:SochbIp    #   ;
+chorghbIp%<num%>:chorghbIp    #   ;
+HutbIp%<num%>:HutbIp    #   ;
+wa’’uy’%<num%>:wa’’uy’    #   ;
+cha’’uy’%<num%>:cha’’uy’    #   ;
+wej’uy’%<num%>:wej’uy’    #   ;
+IoS’uy’%<num%>:IoS’uy’    #   ;
+vagh’uy’%<num%>:vagh’uy’    #   ;
+jav’uy’%<num%>:jav’uy’   #   ;
+Soch’uy’%<num%>:Soch’uy’    #   ;
+chorgh’uy’%<num%>:chorgh’uy’    #   ;
+Hut’uy’%<num%>:Hut’uy’    #   ;
+
+! 0th
+paghDIch%<adj%>%<ord%>:paghDIch   # ;
+! 1st-9th
+wa’DIch%<adj%>%<ord%>:wa’DIch    #   ;
+cha’DIch%<adj%>%<ord%>:cha’DIch    #   ;
+wejDIch%<adj%>%<ord%>:wejDIch    #   ;
+IoSDIch%<adj%>%<ord%>:IoSDIch    #   ;
+vaghDIch%<adj%>%<ord%>:vaghDIch    #   ;
+javDIch%<adj%>%<ord%>:javDIch   #   ;
+SochDIch%<adj%>%<ord%>:SochDIch    #   ;
+chorghDIch%<adj%>%<ord%>:chorghDIch    #   ;
+HutDIch%<adj%>%<ord%>:HutDIch    #   ;
+
+! 10th-90th etc. easy compounds
+wa’maHDIch%<adj%>%<ord%>:wa’maHDIch    #   ;
+cha’maHDIch%<adj%>%<ord%>:cha’maHDIch    #   ;
+wejmaHDIch%<adj%>%<ord%>:wejmaHDIch    #   ;
+IoSmaHDIch%<adj%>%<ord%>:IoSmaHDIch    #   ;
+vaghmaHDIch%<adj%>%<ord%>:vaghmaHDIch    #   ;
+javmaHDIch%<adj%>%<ord%>:javmaHDIch   #   ;
+SochmaHDIch%<adj%>%<ord%>:SochmaHDIch    #   ;
+chorghmaHDIch%<adj%>%<ord%>:chorghmaHDIch    #   ;
+HutmaHDIch%<adj%>%<ord%>:HutmaHDIch    #   ;
+wa’vatlhDIch%<adj%>%<ord%>:wa’vatlhDIch    #   ;
+cha’vatlhDIch%<adj%>%<ord%>:cha’vatlhDIch    #   ;
+wejvatlhDIch%<adj%>%<ord%>:wejvatlhDIch    #   ;
+IoSvatlhDIch%<adj%>%<ord%>:IoSvatlhDIch    #   ;
+vaghvatlhDIch%<adj%>%<ord%>:vaghvatlhDIch    #   ;
+javvatlhDIch%<adj%>%<ord%>:javvatlhDIch   #   ;
+SochvatlhDIch%<adj%>%<ord%>:SochvatlhDIch    #   ;
+chorghvatlhDIch%<adj%>%<ord%>:chorghvatlhDIch    #   ;
+HutvatlhDIch%<adj%>%<ord%>:HutvatlhDIch    #   ;
+wa’SaDDIch%<adj%>%<ord%>:wa’SaDDIch    #   ;
+cha’SaDDIch%<adj%>%<ord%>:cha’SaDDIch    #   ;
+wejSaDDIch%<adj%>%<ord%>:wejSaDDIch    #   ;
+IoSSaDDIch%<adj%>%<ord%>:IoSSaDDIch    #   ;
+vaghSaDDIch%<adj%>%<ord%>:vaghSaDDIch    #   ;
+javSaDDIch%<adj%>%<ord%>:javSaDDIch   #   ;
+SochSaDDIch%<adj%>%<ord%>:SochSaDDIch    #   ;
+chorghSaDDIch%<adj%>%<ord%>:chorghSaDDIch    #   ;
+HutSaDDIch%<adj%>%<ord%>:HutSaDDIch    #   ;
+wa’SanIDDIch%<adj%>%<ord%>:wa’SanIDDIch    #   ;
+cha’SanIDDIch%<adj%>%<ord%>:cha’SanIDDIch    #   ;
+wejSanIDDIch%<adj%>%<ord%>:wejSanIDDIch    #   ;
+IoSSanIDDIch%<adj%>%<ord%>:IoSSanIDDIch    #   ;
+vaghSanIDDIch%<adj%>%<ord%>:vaghSanIDDIch    #   ;
+javSanIDDIch%<adj%>%<ord%>:javSanIDDIch   #   ;
+SochSanIDDIch%<adj%>%<ord%>:SochSanIDDIch    #   ;
+chorghSanIDDIch%<adj%>%<ord%>:chorghSanIDDIch    #   ;
+HutSanIDDIch%<adj%>%<ord%>:HutSanIDDIch    #   ;
+wa’netlhDIch%<adj%>%<ord%>:wa’netlhDIch    #   ;
+cha’netlhDIch%<adj%>%<ord%>:cha’netlhDIch    #   ;
+wejnetlhDIch%<adj%>%<ord%>:wejnetlhDIch    #   ;
+IoSnetlhDIch%<adj%>%<ord%>:IoSnetlhDIch    #   ;
+vaghnetlhDIch%<adj%>%<ord%>:vaghnetlhDIch    #   ;
+javnetlhDIch%<adj%>%<ord%>:javnetlhDIch   #   ;
+SochnetlhDIch%<adj%>%<ord%>:SochnetlhDIch    #   ;
+chorghnetlhDIch%<adj%>%<ord%>:chorghnetlhDIch    #   ;
+HutnetlhDIch%<adj%>%<ord%>:HutnetlhDIch    #   ;
+wa’bIpDIch%<adj%>%<ord%>:wa’bIpDIch    #   ;
+cha’bIpDIch%<adj%>%<ord%>:cha’bIpDIch    #   ;
+wejbIpDIch%<adj%>%<ord%>:wejbIpDIch    #   ;
+IoSbIpDIch%<adj%>%<ord%>:IoSbIpDIch    #   ;
+vaghbIpDIch%<adj%>%<ord%>:vaghbIpDIch    #   ;
+javbIpDIch%<adj%>%<ord%>:javbIpDIch   #   ;
+SochbIpDIch%<adj%>%<ord%>:SochbIpDIch    #   ;
+chorghbIpDIch%<adj%>%<ord%>:chorghbIpDIch    #   ;
+HutbIpDIch%<adj%>%<ord%>:HutbIpDIch    #   ;
+wa’’uy’DIch%<adj%>%<ord%>:wa’’uy’DIch    #   ;
+cha’’uy’DIch%<adj%>%<ord%>:cha’’uy’DIch    #   ;
+wej’uy’DIch%<adj%>%<ord%>:wej’uy’DIch    #   ;
+IoS’uy’DIch%<adj%>%<ord%>:IoS’uy’DIch    #   ;
+vagh’uy’DIch%<adj%>%<ord%>:vagh’uy’DIch    #   ;
+jav’uy’DIch%<adj%>%<ord%>:jav’uy’DIch   #   ;
+Soch’uy’DIch%<adj%>%<ord%>:Soch’uy’DIch    #   ;
+chorgh’uy’DIch%<adj%>%<ord%>:chorgh’uy’DIch    #   ;
+Hut’uy’DIch%<adj%>%<ord%>:Hut’uy’DIch    #   ;
+
+LEXICON Pronouns
+
+jIH%<prn%>:jIH    #   ;
+maH%<prn%>:maH    #   ;
+soH%<prn%>:soH    #   ;
+tlhIH%<prn%>:tlhIH    #   ;
+ghaH%<prn%>:ghaH    #   ;
+chaH%<prn%>:chaH    #   ;
+’oH%<prn%>:’oH    #   ;
+bIH%<prn%>:bIH    #   ;
+
+
+LEXICON Punctuation
+
+! Clause boundary symbols:
+    %,%<punct%>%<sent%>:%,     # ;
+    %.%<punct%>%<sent%>:%.     # ;
+  %.%.%<punct%>%<sent%>:%.%.   # ;
+%.%.%.%<punct%>%<sent%>:%.%.%. # ;
+    %:%<punct%>%<sent%>:%:     # ;
+    %;%<punct%>%<sent%>:%;     # ;
+ ^excl%<punct%>%<sent%>:%!     # ;
+ ^pipe%<punct%>%<sent%>:%|     # ;
+    %?%<punct%>%<sent%>:%?     # ;
+     …%<punct%>%<sent%>:…      # ;
+     ¿%<punct%>%<sent%>:¿      # ;
+     ¶%<punct%>%<sent%>:¶      # ;
+
+®%<n%>%<abbr%>:® # ;
+©%<n%>%<abbr%>:© # ;
+
+
+  •%<punct%>:•   # ;
+  ●%<punct%>:●   # ;
+  ·%<punct%>:·   # ;
+   ּ%<punct%>:ּ    # ;
+  ·%<punct%>:·   # ;
+  -%<punct%>:-   # ; ! hyphen
+ --%<punct%>:--  # ; ! double hyphen
+  –%<punct%>:–   # ; ! endash
+  —%<punct%>:—   # ; ! emdash
+  ―%<punct%>:―   # ; ! horizontal bar
+  =%<punct%>:=   # ;
+  ≈%<punct%>:≈   # ;
+ %%%<punct%>:%%  # ;
+  &%<punct%>:&   # ;
+ %"%<punct%>:%"  # ;
+  '%<punct%>:'   # ;
+ %*%<punct%>:%*  # ;
+  +%<punct%>:+   # ;
+  ±%<punct%>:±   # ;
+  `%<punct%>:`   # ;
+  ´%<punct%>:´   # ;
+  /%<punct%>:/   # ;
++/-%<punct%>:+/- # ;
+ %~%<punct%>:%~  # ;
+
+! Paired punctuation marks
+
+  «%<punct%>:«     # ;
+  »%<punct%>:»    # ;
+ %“%<punct%>:%“     # ;
+ %”%<punct%>:%”    # ;
+ %‘%<punct%>:%‘     # ;
+ %’%<punct%>:%’    # ;
+ %„%<punct%>:%„     # ;
+ %‹%<punct%>:%‹     # ;
+ %›%<punct%>:%›    # ;
+ %(%<punct%>:%(     # ;
+ %)%<punct%>:%)    # ;
+ %[%<punct%>:%[     # ;
+ %]%<punct%>:%]    # ;
+ %{%<punct%>:%{     # ;
+ %}%<punct%>:%}    # ;
+ %<%<punct%>:%[%<%] # ;
+ %>%<punct%>:%[%>%] # ;
+
+
+
+ 
+
+
+
+LEXICON Verbs
+
+Qong%<vblex%>:Qong    Reflexive?    ;
+Sop%<vblex%>:Sop     Reflexive?    ;
+legh%<vblex%>:legh    Reflexive?    ;
+qIp%<vblex%>:qIp     Reflexive?    ;
+
+
+LEXICON Augmentation
+
+%<aug%>:’a’    Number? ;
+%<dim%>:Hom    Number? ;
+
+LEXICON Number
+
+%<pl%>:pu’ NounQualification?  ;
+%<pl%>:Du’ NounQualification?  ;
+%<pl%>:mey NounQualification?  ;
+%<pl%>:ray NounQualification?  ;
+
+LEXICON NounQualification
+
++qoq%<foc%>:qoq    Possession? ;
++Hey%<foc%>:Hey    Possession? ;
++na%<foc%>:na      Possession? ;
+
+LEXICON Possession
+
+%<px1sg%>:wIj  Cases?  ;
+%<px2sg%>:lIj  Cases?  ;
+%<px3sg%>:Daj  Cases?  ;
+%<px1pl%>:maj  Cases?  ;
+%<px2pl%>:raj  Cases?  ;
+%<px3pl%>:chaj Cases?  ;
+%<px1sg%>:wI’  Cases?  ;
+%<px2sg%>:lI’  Cases?  ;
+%<px1pl%>:ma’  Cases?  ;
+%<px2pl%>:ra’  Cases?  ;
++this%<foc%>:vam   Cases?  ;
++that%<foc%>:vetlh Cases?  ;
+
+LEXICON Cases
+
+%<loc%>:Daq    #   ;
+%<sep%>:vo’    #   ;
+%<ins%>:mo’    #   ;
+%<benef%>:vaD    #   ;
++’e’%<foc%>:’e’    #   ;
+
+
+LEXICON Augmentation?
+
+0   Augmentation ;
+0   Number?  ;
+
+LEXICON Number?
+
+0   Number  ;
+%<sg%>:0   NounQualification?  ;
+
+LEXICON NounQualification?
+
+0   NounQualification   ;
+0   Possession?  ;
+
+LEXICON Possession?
+
+0   Possession  ;
+0   Cases?  ;
+
+LEXICON Cases?
+
+0       Cases   ;
+%<nom%>:0  #   ;
+
+
+
+
+LEXICON VerbalPrefixes
+
+%<sg1%>:jI     Verbs ;
+%<sg2%>:bI     Verbs ;
+%<sg3%>:0     Verbs ;
+%<pl1%>:ma     Verbs ;
+%<pl2%>:Su     Verbs ;
+%<pl3%>:0     Verbs ;
+%<sg2%>%<sg1obj%>:cho     Verbs ;
+%<sg3%>%<sg1obj%>:mu     Verbs ;
+%<pl2%>%<sg1obj%>:tu     Verbs ;
+%<pl3%>%<sg1obj%>:mu     Verbs ;
+%<sg1%>%<sg2obj%>:qa     Verbs ;
+%<sg3%>%<sg2obj%>:Du     Verbs ;
+%<pl1%>%<sg2obj%>:pI     Verbs ;
+%<pl3%>%<sg2obj%>:nI     Verbs ;
+%<sg1%>%<sg3obj%>:vI     Verbs ;
+%<sg2%>%<sg3obj%>:Da     Verbs ;
+%<sg3%>%<sg3obj%>:0     Verbs ;
+%<pl1%>%<sg3obj%>:wI     Verbs ;
+%<pl2%>%<sg3obj%>:bo     Verbs ;
+%<pl3%>%<sg3obj%>:lu     Verbs ;
+%<sg2%>%<pl1obj%>:ju     Verbs ;
+%<sg3%>%<pl1obj%>:nu     Verbs ;
+%<pl2%>%<pl1obj%>:che     Verbs ;
+%<pl3%>%<pl1obj%>:nu     Verbs ;
+%<sg1%>%<pl2obj%>:Sa     Verbs ;
+%<sg3%>%<pl2obj%>:lI     Verbs ;
+%<pl1%>%<pl2obj%>:re     Verbs ;
+%<pl1%>%<pl2obj%>:lI     Verbs ;
+%<sg1%>%<pl3obj%>:vI     Verbs ;
+%<sg2%>%<pl3obj%>:Da     Verbs ;
+%<sg3%>%<pl3obj%>:0     Verbs ;
+%<pl1%>%<pl3obj%>:DI     Verbs ;
+%<pl2%>%<pl3obj%>:bo     Verbs ;
+%<pl3%>%<pl3obj%>:0     Verbs ;
+%<imp%>%<sg2%>:yI     Verbs ;
+%<imp%>%<pl2%>:pe     Verbs ;
+%<imp%>%<sg2%>%<sg1obj%>:HI     Verbs ;
+%<imp%>%<pl2%>%<sg1obj%>:HI     Verbs ;
+%<imp%>%<sg2%>%<sg3obj%>:yI     Verbs ;
+%<imp%>%<pl2%>%<sg3obj%>:yI     Verbs ;
+%<imp%>%<pl2%>%<pl1obj%>:gho     Verbs ;
+%<imp%>%<pl2%>%<pl1obj%>:gho     Verbs ;
+%<imp%>%<pl2%>%<pl3obj%>:tI     Verbs ;
+%<imp%>%<pl2%>%<pl3obj%>:tI     Verbs ;
+
+LEXICON Reflexive
+
+%<ref%>:’egh   Volition?   ;
+%<rec%>:chuq  Volition?   ;
+
+LEXICON Volition
+
+nIs%<foc%>+:nIS    Change? ;
+qang%<foc%>+:qang  Change? ;
+rup%<foc%>+:rup    Change? ;
+beH%<foc%>+:beH    Change? ;
+vIp%<foc%>+:vIp    Change? ;
+
+LEXICON Change
+
++choh%<foc%>:choh  Cause?  ;
++qa’%<foc%>:qa’    Cause?  ;
+
+LEXICON Cause
+
+%<cau%>:moH   Definite?   ;
+
+LEXICON Definite
+
++lu’%<foc%>:lu’    Qualification?  ;
++laH%<foc%>:laH    Qualification?  ;
+
+LEXICON Qualification
+
++chu’%<foc%>:chu’  Aspect? ;
++bej%<foc%>:bej    Aspect? ;
++law’%<foc%>:law’  Aspect? ;
+
+LEXICON Aspect
+
+%<past%>:pu’   Honorific?  ;
+%<past%>:ta’   Honorific?  ;
+%<cont%>:taH   Honorific?  ;
+%<prog%>:lI’   Honorific?  ;
+
+LEXICON Honorific
+
+%<honor%>:neS  Others? ;
+
+LEXICON Others
+
++DI’%<foc%>:DI’    #   ;
++chugh%<foc%>:chugh    #   ;
++pa’%<foc%>:pa’    #   ;
++vIS%<foc%>:vIS    #   ;
++bogh%<foc%>:bogh  #   ;
++meh%<foc%>:meH    #   ;
++’a’%<qst%>:’a’    #   ;
++wI%<n%>:wI’    Augmentation?   ;
+
+
+LEXICON Reflexive?
+
+%<vblex%>:0   Reflexive   ;
+%<vblex%>:0    Volition?   ;
+
+LEXICON Volition?
+0   Volition    ;
+0   Change? ;
+
+LEXICON Change?
+0   Change  ;
+0   Cause?  ;
+
+LEXICON Cause?
+0   Cause   ;
+0   Definite?   ;
+
+LEXICON Definite?
+0   Definite    ;
+0   Qualification?   ;
+
+LEXICON Qualification?
+0   Qualification   ;
+0   Aspect? ;
+
+LEXICON Aspect?
+0   Aspect  ;
+0   Honorific?  ;
+
+LEXICON Honorific?
+0   Honorific   ;
+0   Others?  ;
+
+LEXICON Others?
+0   Others  ;
+0   #   ;
+
+! vim: set ft=xfst-lexc:

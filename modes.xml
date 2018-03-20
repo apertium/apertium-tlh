@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+
+  <mode name="tlh-morph" install="yes">
+    <pipeline>
+      <program name="hfst-proc -e -w">
+        <file name="tlh.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="tlh-gener" install="yes">
+    <pipeline>
+      <program name="hfst-proc -g">
+        <file name="tlh.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="tlh-disam" install="yes">
+    <pipeline>
+      <program name="hfst-proc -e -w">
+        <file name="tlh.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="tlh.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="tlh-disam-debug" install="yes">
+    <pipeline>
+      <program name="hfst-proc -e -w">
+        <file name="tlh.automorf.hfst"/>
+      </program>
+      <program name="cg-conv -a -l" />
+      <program name="vislcg3 --trace -g">
+        <file name="apertium-tlh.tlh.rlx"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+</modes>
