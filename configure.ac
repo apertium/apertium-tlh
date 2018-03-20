@@ -4,11 +4,11 @@
 AC_PREREQ(2.64)
 
 AC_INIT([apertium-tlh], [0.0.1], [https://github.com/apertium/apertium-tlh/issues],, [https://github.com/flammie/apertium-tlh/])
-AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz no-detlhe])
+AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz no-define])
 AC_PROG_LN_S
 AC_PROG_AWK
 
-m4_detlhe([required_apertium_version], [3.3.0])
+m4_define([required_apertium_version], [3.3.0])
 PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version)
 
 

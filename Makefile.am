@@ -44,7 +44,7 @@ $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
 
 ## Distribution
 
-EXTRA_DIST=$(BASENAME).$(LANG1).dix \
+EXTRA_DIST=\
 	   $(BASENAME).$(LANG1).acx \
 	   $(BASENAME).$(LANG1).rlx \
 	   $(BASENAME).$(LANG1).lexc \
@@ -58,7 +58,7 @@ apertium_tlhdir=$(prefix)/share/apertium/$(BASENAME)/
 apertium_tlh_srcdir=$(prefix)/share/apertium/$(BASENAME)/
 
 apertium_tlh_DATA=$(TARGETS_COMMON)
-apertium_tlh_src_DATA=$(BASENAME).$(LANG1).rlx $(BASENAME).$(LANG1).dix
+apertium_tlh_src_DATA=$(BASENAME).$(LANG1).rlx $(BASENAME).$(LANG1).lexc
 
 pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
