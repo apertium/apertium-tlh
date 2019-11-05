@@ -92,6 +92,7 @@ LEXICON Root
 
 
 LEXICON Adverbs
+
 batlh%<adv%>:batlh    #  ;
 bong%<adv%>:bong    #  ;
 chaq%<adv%>:chaq    #  ;
@@ -293,6 +294,7 @@ cha’Hu’%<n%>:cha’Hu’   Augmentation?  ;
 chaj%<n%>:chaj   Augmentation?  ;
 cha’leS%<n%>:cha’leS   Augmentation?  ;
 chal%<n%>:chal   Augmentation?  ;
+chalHa’DIbaH%<n%>:chalHa’DIbaH   Augmentation?  ;
 chalqach%<n%>:chalqach   Augmentation?  ;
 cham%<n%>:cham   Augmentation?  ;
 chamwI’%<n%>:chamwI’   Augmentation?  ;
@@ -528,7 +530,6 @@ ghu%<n%>:ghu   Augmentation?  ;
 ghuv%<n%>:ghuv   Augmentation?  ;
 HablI’%<n%>:HablI’   Augmentation?  ;
 Ha’DIbaH%<n%>:Ha’DIbaH   Augmentation?  ;
-Ha’DIbaH%<n%>:Ha’DIbaH   Augmentation?  ;
 HajDob%<n%>:HajDob   Augmentation?  ;
 Hal%<n%>:Hal   Augmentation?  ;
 HanDogh%<n%>:HanDogh   Augmentation?  ;
@@ -585,6 +586,7 @@ Hoq%<n%>:Hoq   Augmentation?  ;
 Hoqra’%<n%>:Hoqra’   Augmentation?  ;
 HoSchem%<n%>:HoSchem   Augmentation?  ;
 HoSDo’%<n%>:HoSDo’   Augmentation?  ;
+Hos%<n%>:Hos   Augmentation?  ;
 HoS%<n%>:HoS   Augmentation?  ;
 HotlhwI’%<n%>:HotlhwI’   Augmentation?  ;
 Hov%<n%>:Hov   Augmentation?  ;
@@ -1801,7 +1803,7 @@ ghaH%<prn%>:ghaH    #   ;
 chaH%<prn%>:chaH    #   ;
 ’oH%<prn%>:’oH    #   ;
 bIH%<prn%>:bIH    #   ;
-
+’e’%<prn%>:’e’    #   ;
 
 LEXICON Punctuation
 
