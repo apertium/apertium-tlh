@@ -59,12 +59,13 @@ Multichar_Symbols
  %<pl2%>
  %<pl3%>
 
-@P.SG1.ON@ @R.SG1.ON@
-@P.SG2.ON@ @R.SG2.ON@
-@P.SG3.ON@ @R.SG3.ON@
-@P.PL1.ON@ @R.PL1.ON@
-@P.PL2.ON@ @R.PL2.ON@
-@P.PL3.ON@ @R.PL3.ON@
+@P.SUBJ.SG1@ @R.SUBJ.SG1@
+@P.SUBJ.SG2@ @R.SUBJ.SG2@
+@P.SUBJ.SG3@ @R.SUBJ.SG3@
+@P.SUBJ.PL1@ @R.SUBJ.PL1@
+@P.SUBJ.PL2@ @R.SUBJ.PL2@
+@P.SUBJ.PL3@ @R.SUBJ.PL3@
+@D.SUBJ@
 
   %<o_sg1%>
   %<o_sg2%>
@@ -73,12 +74,13 @@ Multichar_Symbols
   %<o_pl2%>
   %<o_pl3%>
 
-@P.OSG1.ON@ @R.OSG1.ON@
-@P.OSG2.ON@ @R.OSG2.ON@
-@P.OSG3.ON@ @R.OSG3.ON@
-@P.OPL1.ON@ @R.OPL1.ON@
-@P.OPL2.ON@ @R.OPL2.ON@
-@P.OPL3.ON@ @R.OPL3.ON@
+@P.OBJ.SG1@ @R.OBJ.SG1@
+@P.OBJ.SG2@ @R.OBJ.SG2@
+@P.OBJ.SG3@ @R.OBJ.SG3@
+@P.OBJ.PL1@ @R.OBJ.PL1@
+@P.OBJ.PL2@ @R.OBJ.PL2@
+@P.OBJ.PL3@ @R.OBJ.PL3@
+@D.OBJ@
 
 %<neg%>
  %<ref%>
@@ -631,6 +633,7 @@ Huy’%<n%>:Huy’   Augmentation?  ;
 ’Ib%<n%>:’Ib   Augmentation?  ;
 ’IghvaH%<n%>:’IghvaH   Augmentation?  ;
 ’I’%<n%>:’I’   Augmentation?  ;
+’IHghach%<n%>:’IHghach   Augmentation?  ;
 ’In%<n%>:’In   Augmentation?  ;
 ’Ip%<n%>:’Ip   Augmentation?  ;
 ’IqnaH%<n%>:’IqnaH   Augmentation?  ;
@@ -2996,6 +2999,7 @@ LEXICON Cases
 
 LEXICON Augmentation?
 
+%<cmp%>:0  Nouns ; 
 0   Augmentation ;
 0   Number?  ;
 
@@ -3024,50 +3028,50 @@ LEXICON Cases?
 
 LEXICON VerbalPrefixes
 
-@P.SG1.ON@:@P.SG1.ON@jI     Verbs ;
-@P.SG2.ON@:@P.SG2.ON@bI     Verbs ;
-@P.SG3.ON@:@P.SG3.ON@0     Verbs ;
-@P.PL1.ON@:@P.PL1.ON@ma     Verbs ;
-@P.PL2.ON@:@P.PL2.ON@Su     Verbs ;
-@P.PL3.ON@:@P.PL3.ON@0     Verbs ;
-@P.SG2.ON@@P.OSG1.ON@:@P.SG2.ON@@P.OSG1.ON@cho     Verbs ;
-@P.SG3.ON@@P.OSG1.ON@:@P.SG3.ON@@P.OSG1.ON@mu     Verbs ;
-@P.PL2.ON@@P.OSG1.ON@:@P.PL2.ON@@P.OSG1.ON@tu     Verbs ;
-@P.PL3.ON@@P.OSG1.ON@:@P.PL3.ON@@P.OSG1.ON@mu     Verbs ;
-@P.SG1.ON@@P.OSG2.ON@:@P.SG1.ON@@P.OSG2.ON@qa     Verbs ;
-@P.SG3.ON@@P.OSG2.ON@:@P.SG3.ON@@P.OSG2.ON@Du     Verbs ;
-@P.PL1.ON@@P.OSG2.ON@:@P.PL1.ON@@P.OSG2.ON@pI     Verbs ;
-@P.PL3.ON@@P.OSG2.ON@:@P.PL3.ON@@P.OSG2.ON@nI     Verbs ;
-@P.SG1.ON@@P.OSG3.ON@:@P.SG1.ON@@P.OSG3.ON@vI     Verbs ;
-@P.SG2.ON@@P.OSG3.ON@:@P.SG2.ON@@P.OSG3.ON@Da     Verbs ;
-@P.SG3.ON@@P.OSG3.ON@:@P.SG3.ON@@P.OSG3.ON@0     Verbs ;
-@P.PL1.ON@@P.OSG3.ON@:@P.PL1.ON@@P.OSG3.ON@wI     Verbs ;
-@P.PL2.ON@@P.OSG3.ON@:@P.PL2.ON@@P.OSG3.ON@bo     Verbs ;
-@P.PL3.ON@@P.OSG3.ON@:@P.PL3.ON@@P.OSG3.ON@lu     Verbs ;
-@P.SG2.ON@@P.OPL1.ON@:@P.SG2.ON@@P.OPL1.ON@ju     Verbs ;
-@P.SG3.ON@@P.OPL1.ON@:@P.SG3.ON@@P.OPL1.ON@nu     Verbs ;
-@P.PL2.ON@@P.OPL1.ON@:@P.PL2.ON@@P.OPL1.ON@che     Verbs ;
-@P.PL3.ON@@P.OPL1.ON@:@P.PL3.ON@@P.OPL1.ON@nu     Verbs ;
-@P.SG1.ON@@P.OPL2.ON@:@P.SG1.ON@@P.OPL2.ON@Sa     Verbs ;
-@P.SG3.ON@@P.OPL2.ON@:@P.SG3.ON@@P.OPL2.ON@lI     Verbs ;
-@P.PL1.ON@@P.OPL2.ON@:@P.PL1.ON@@P.OPL2.ON@re     Verbs ;
-@P.PL1.ON@@P.OPL2.ON@:@P.PL1.ON@@P.OPL2.ON@lI     Verbs ;
-@P.SG1.ON@@P.OPL3.ON@:@P.SG1.ON@@P.OPL3.ON@vI     Verbs ;
-@P.SG2.ON@@P.OPL3.ON@:@P.SG2.ON@@P.OPL3.ON@Da     Verbs ;
-@P.SG3.ON@@P.OPL3.ON@:@P.SG3.ON@@P.OPL3.ON@0     Verbs ;
-@P.PL1.ON@@P.OPL3.ON@:@P.PL1.ON@@P.OPL3.ON@DI     Verbs ;
-@P.PL2.ON@@P.OPL3.ON@:@P.PL2.ON@@P.OPL3.ON@bo     Verbs ;
-@P.PL3.ON@@P.OPL3.ON@:@P.PL3.ON@@P.OPL3.ON@0     Verbs ;
-@P.IMP.ON@@P.SG2.ON@:@P.IMP.ON@@P.SG2.ON@yI     Verbs ;
-@P.IMP.ON@@P.PL2.ON@:@P.IMP.ON@@P.PL2.ON@pe     Verbs ;
-@P.IMP.ON@@P.SG2.ON@@P.OSG1.ON@:@P.IMP.ON@@P.SG2.ON@@P.OSG1.ON@HI     Verbs ;
-@P.IMP.ON@@P.PL2.ON@@P.OSG1.ON@:@P.IMP.ON@@P.PL2.ON@@P.OSG1.ON@HI     Verbs ;
-@P.IMP.ON@@P.SG2.ON@@P.OSG3.ON@:@P.IMP.ON@@P.SG2.ON@@P.OSG3.ON@yI     Verbs ;
-@P.IMP.ON@@P.PL2.ON@@P.OSG3.ON@:@P.IMP.ON@@P.PL2.ON@@P.OSG3.ON@yI     Verbs ;
-@P.IMP.ON@@P.PL2.ON@@P.OPL1.ON@:@P.IMP.ON@@P.PL2.ON@@P.OPL1.ON@gho     Verbs ;
-@P.IMP.ON@@P.PL2.ON@@P.OPL1.ON@:@P.IMP.ON@@P.PL2.ON@@P.OPL1.ON@gho     Verbs ;
-@P.IMP.ON@@P.PL2.ON@@P.OPL3.ON@:@P.IMP.ON@@P.PL2.ON@@P.OPL3.ON@tI     Verbs ;
-@P.IMP.ON@@P.PL2.ON@@P.OPL3.ON@:@P.IMP.ON@@P.PL2.ON@@P.OPL3.ON@tI     Verbs ;
+@P.SUBJ.SG1@:@P.SUBJ.SG1@jI     Verbs ;
+@P.SUBJ.SG2@:@P.SUBJ.SG2@bI     Verbs ;
+@P.SUBJ.SG3@:@P.SUBJ.SG3@0     Verbs ;
+@P.SUBJ.PL1@:@P.SUBJ.PL1@ma     Verbs ;
+@P.SUBJ.PL2@:@P.SUBJ.PL2@Su     Verbs ;
+@P.SUBJ.PL3@:@P.SUBJ.PL3@0     Verbs ;
+@P.SUBJ.SG2@@P.OBJ.SG1@:@P.SUBJ.SG2@@P.OBJ.SG1@cho     Verbs ;
+@P.SUBJ.SG3@@P.OBJ.SG1@:@P.SUBJ.SG3@@P.OBJ.SG1@mu     Verbs ;
+@P.SUBJ.PL2@@P.OBJ.SG1@:@P.SUBJ.PL2@@P.OBJ.SG1@tu     Verbs ;
+@P.SUBJ.PL3@@P.OBJ.SG1@:@P.SUBJ.PL3@@P.OBJ.SG1@mu     Verbs ;
+@P.SUBJ.SG1@@P.OBJ.SG2@:@P.SUBJ.SG1@@P.OBJ.SG2@qa     Verbs ;
+@P.SUBJ.SG3@@P.OBJ.SG2@:@P.SUBJ.SG3@@P.OBJ.SG2@Du     Verbs ;
+@P.SUBJ.PL1@@P.OBJ.SG2@:@P.SUBJ.PL1@@P.OBJ.SG2@pI     Verbs ;
+@P.SUBJ.PL3@@P.OBJ.SG2@:@P.SUBJ.PL3@@P.OBJ.SG2@nI     Verbs ;
+@P.SUBJ.SG1@@P.OBJ.SG3@:@P.SUBJ.SG1@@P.OBJ.SG3@vI     Verbs ;
+@P.SUBJ.SG2@@P.OBJ.SG3@:@P.SUBJ.SG2@@P.OBJ.SG3@Da     Verbs ;
+@P.SUBJ.SG3@@P.OBJ.SG3@:@P.SUBJ.SG3@@P.OBJ.SG3@0     Verbs ;
+@P.SUBJ.PL1@@P.OBJ.SG3@:@P.SUBJ.PL1@@P.OBJ.SG3@wI     Verbs ;
+@P.SUBJ.PL2@@P.OBJ.SG3@:@P.SUBJ.PL2@@P.OBJ.SG3@bo     Verbs ;
+@P.SUBJ.PL3@@P.OBJ.SG3@:@P.SUBJ.PL3@@P.OBJ.SG3@lu     Verbs ;
+@P.SUBJ.SG2@@P.OBJ.PL1@:@P.SUBJ.SG2@@P.OBJ.PL1@ju     Verbs ;
+@P.SUBJ.SG3@@P.OBJ.PL1@:@P.SUBJ.SG3@@P.OBJ.PL1@nu     Verbs ;
+@P.SUBJ.PL2@@P.OBJ.PL1@:@P.SUBJ.PL2@@P.OBJ.PL1@che     Verbs ;
+@P.SUBJ.PL3@@P.OBJ.PL1@:@P.SUBJ.PL3@@P.OBJ.PL1@nu     Verbs ;
+@P.SUBJ.SG1@@P.OBJ.PL2@:@P.SUBJ.SG1@@P.OBJ.PL2@Sa     Verbs ;
+@P.SUBJ.SG3@@P.OBJ.PL2@:@P.SUBJ.SG3@@P.OBJ.PL2@lI     Verbs ;
+@P.SUBJ.PL1@@P.OBJ.PL2@:@P.SUBJ.PL1@@P.OBJ.PL2@re     Verbs ;
+@P.SUBJ.PL1@@P.OBJ.PL2@:@P.SUBJ.PL1@@P.OBJ.PL2@lI     Verbs ;
+@P.SUBJ.SG1@@P.OBJ.PL3@:@P.SUBJ.SG1@@P.OBJ.PL3@vI     Verbs ;
+@P.SUBJ.SG2@@P.OBJ.PL3@:@P.SUBJ.SG2@@P.OBJ.PL3@Da     Verbs ;
+@P.SUBJ.SG3@@P.OBJ.PL3@:@P.SUBJ.SG3@@P.OBJ.PL3@0     Verbs ;
+@P.SUBJ.PL1@@P.OBJ.PL3@:@P.SUBJ.PL1@@P.OBJ.PL3@DI     Verbs ;
+@P.SUBJ.PL2@@P.OBJ.PL3@:@P.SUBJ.PL2@@P.OBJ.PL3@bo     Verbs ;
+@P.SUBJ.PL3@@P.OBJ.PL3@:@P.SUBJ.PL3@@P.OBJ.PL3@0     Verbs ;
+@P.IMP.ON@@P.SUBJ.SG2@:@P.IMP.ON@@P.SUBJ.SG2@yI     Verbs ;
+@P.IMP.ON@@P.SUBJ.PL2@:@P.IMP.ON@@P.SUBJ.PL2@pe     Verbs ;
+@P.IMP.ON@@P.SUBJ.SG2@@P.OBJ.SG1@:@P.IMP.ON@@P.SUBJ.SG2@@P.OBJ.SG1@HI     Verbs ;
+@P.IMP.ON@@P.SUBJ.PL2@@P.OBJ.SG1@:@P.IMP.ON@@P.SUBJ.PL2@@P.OBJ.SG1@HI     Verbs ;
+@P.IMP.ON@@P.SUBJ.SG2@@P.OBJ.SG3@:@P.IMP.ON@@P.SUBJ.SG2@@P.OBJ.SG3@yI     Verbs ;
+@P.IMP.ON@@P.SUBJ.PL2@@P.OBJ.SG3@:@P.IMP.ON@@P.SUBJ.PL2@@P.OBJ.SG3@yI     Verbs ;
+@P.IMP.ON@@P.SUBJ.SG2@@P.OBJ.PL1@:@P.IMP.ON@@P.SUBJ.SG2@@P.OBJ.PL1@gho     Verbs ;
+@P.IMP.ON@@P.SUBJ.PL2@@P.OBJ.PL1@:@P.IMP.ON@@P.SUBJ.PL2@@P.OBJ.PL1@gho     Verbs ;
+@P.IMP.ON@@P.SUBJ.SG2@@P.OBJ.PL3@:@P.IMP.ON@@P.SUBJ.SG2@@P.OBJ.PL3@tI     Verbs ;
+@P.IMP.ON@@P.SUBJ.PL2@@P.OBJ.PL3@:@P.IMP.ON@@P.SUBJ.PL2@@P.OBJ.PL3@tI     Verbs ;
 
 LEXICON Reflexive
 
@@ -3127,54 +3131,106 @@ LEXICON Others
 
 LEXICON Reflexive?
 
-%<vblex%>:0   Reflexive   ;
-%<vblex%>:0    Volition?   ;
+0   Reflexive   ;
+0    Volition?   ;
+%<neg%>:be’ Reflexive ;
+%<neg%>:be’ Volition? ;
+%<emph%>:qu’ Reflexive ;
+%<emph%>:qu’ Volition? ;
+
+%<der_ghach%>:ghach Augmentation? ;
 
 LEXICON Volition?
+
 0   Volition    ;
 0   Change? ;
+%<neg%>:be’ Change? ;
+%<neg%>:be’ Volition ;
+%<emph%>:qu’ Change? ;
+%<emph%>:qu’ Volition ;
 
 LEXICON Change?
+
 0   Change  ;
 0   Cause?  ;
+%<neg%>:be’ Change ;
+%<neg%>:be’ Cause? ;
+%<emph%>:qu’ Change ;
+%<emph%>:qu’ Cause? ;
 
 LEXICON Cause?
+
 0   Cause   ;
 0   Definite?   ;
+%<neg%>:be’ Cause ;
+%<neg%>:be’ Definite? ;
+%<emph%>:qu’ Cause ;
+%<emph%>:qu’ Definite? ;
 
 LEXICON Definite?
+
 0   Definite    ;
 0   Qualification?   ;
+%<neg%>:be’ Definite ;
+%<neg%>:be’ Qualification? ;
+%<emph%>:qu’ Definite ;
+%<emph%>:qu’ Qualification? ;
 
 LEXICON Qualification?
+
 0   Qualification   ;
 0   Aspect? ;
+%<neg%>:be’ Aspect? ;
+%<neg%>:be’ Qualification ;
+%<emph%>:qu’ Aspect? ;
+%<emph%>:qu’ Qualification ;
 
 LEXICON Aspect?
+
 0   Aspect  ;
 0   Honorific?  ;
+%<neg%>:be’ Aspect ;
+%<neg%>:be’ Honorific? ;
+%<emph%>:qu’ Aspect ;
+%<emph%>:qu’ Honorific? ;
 
 LEXICON Honorific?
+
 0   Honorific   ;
 0   Others?  ;
+%<neg%>:be’ Others? ;
+%<neg%>:be’ Honorific ;
+%<emph%>:qu’ Others? ;
+%<emph%>:qu’ Honorific ;
 
 LEXICON Others?
+
 0   Others  ;
 0   ENDLEX1   ;
 
 LEXICON ENDLEX1
 
 @D.IMP.ON@ ENDLEX2 ;
-@R.IMP.ON@:@R.IMP.ON@%<imp%> ENDLEX2 ;
+@R.IMP.ON@%<imp%>:@R.IMP.ON@ ENDLEX2 ;
 
 LEXICON ENDLEX2
 
- ENDLEX3 ;
-@R.SG1.ON@:@R.SG1.ON@%<sg1%> ENDLEX3 ;
+@D.SUBJ@ ENDLEX3 ;
+@R.SUBJ.SG1@%<p1%>%<sg%>:@R.SUBJ.SG1@ ENDLEX3 ;
+@R.SUBJ.SG2@%<p2%>%<sg%>:@R.SUBJ.SG2@ ENDLEX3 ;
+@R.SUBJ.SG3@%<p3%>%<sg%>:@R.SUBJ.SG3@ ENDLEX3 ;
+@R.SUBJ.PL1@%<p1%>%<pl%>:@R.SUBJ.PL1@ ENDLEX3 ;
+@R.SUBJ.PL2@%<p2%>%<pl%>:@R.SUBJ.PL2@ ENDLEX3 ;
+@R.SUBJ.PL3@%<p3%>%<pl%>:@R.SUBJ.PL3@ ENDLEX3 ;
 
 LEXICON ENDLEX3
 
- # ;
-@R.OSG1.ON@:@R.OSG1.ON@%<o_sg1%> # ;
+@D.OBJ@ # ;
+@R.OBJ.SG1@%<o_sg1%>:@R.OBJ.SG1@ # ;
+@R.OBJ.SG2@%<o_sg2%>:@R.OBJ.SG2@ # ;
+@R.OBJ.SG3@%<o_sg3%>:@R.OBJ.SG3@ # ;
+@R.OBJ.PL1@%<o_pl1%>:@R.OBJ.PL1@ # ;
+@R.OBJ.PL2@%<o_pl2%>:@R.OBJ.PL2@ # ;
+@R.OBJ.PL3@%<o_pl3%>:@R.OBJ.PL3@ # ;
 
 ! vim: set ft=xfst-lexc:
