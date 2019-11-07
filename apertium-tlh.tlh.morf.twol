@@ -55,6 +55,8 @@ y:
 .:
 h:0
 
+’:0
+
 ;
 
 Sets
@@ -76,3 +78,5 @@ l:0 <=> _ h:0 ;
 "g removal in transcribe"
 g:0 <=> n: _ ;
 
+"’ assimilates to tlh?"
+’:0 <=> t l h _ ;
