@@ -63,16 +63,7 @@ apertium_tlh_src_DATA=$(BASENAME).$(LANG1).rlx $(BASENAME).$(LANG1).lexc
 pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
 
-apertium_modesdir=$(prefix)/share/apertium/modes/
-apertium_modes_DATA=modes/$(LANG1)-morph.mode
-
-modes/tlh-morph.mode: modes.xml
-	if test  x$(srcdir) != x$(builddir) ; then \
-		cp -v $< . ;\
-	fi
-	apertium-gen-modes modes.xml
-	mv -v *.mode modes/
-
+install-data-local: install-modes
 
 ## Cleanup
 
