@@ -77,3 +77,6 @@ clean-local:
 ## Tests
 
 TESTS=coverages.bash lookups.bash lookdowns.bash
+
+test: all
+	apertium-regtest test

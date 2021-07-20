@@ -1,0 +1,6 @@
+{
+    "tlh": {
+        "input": "tlh-input.txt",
+        "mode": "tlh-morph"
+    }
+}
